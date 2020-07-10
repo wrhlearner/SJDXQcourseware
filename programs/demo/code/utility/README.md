@@ -5,6 +5,7 @@
 - 可以单独编写、编译、测试model层
 - 不知道且无需知道界面的情况
 - 为了了解界面情况，需要编写viewmodel层
-# viewmodel层
+# viewmodel层注意事项
 - 为了接受model层发出的通知，需要在viewmodel中定义一个sink接收器
 - viewmodel和model是强耦合的
+- viewmodel中做了command和sink两个文件夹。当需要加入新命令时，只需在command文件夹中加入对应的.cpp和.h文件，便于增删修操作和查找。
