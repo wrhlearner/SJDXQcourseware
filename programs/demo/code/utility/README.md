@@ -1,3 +1,10 @@
 # common层注意事项
 - common层中，Command_Parameter_ref.cpp和Command_Parameter_ref.h并没有在程序中实际使用
 - common层没有测试。或者可以编写简单的测试程序进行测试。
+# model层注意事项
+- 可以单独编写、编译、测试model层
+- 不知道且无需知道界面的情况
+- 为了了解界面情况，需要编写viewmodel层
+# viewmodel层
+- 为了接受model层发出的通知，需要在viewmodel中定义一个sink接收器
+- viewmodel和model是强耦合的
